@@ -18,7 +18,7 @@ function App() {
       try {
         const res = await fetch(`${BASE_URL}/characters`)
         const data = await res.json()
-        setFeaturedCharacter(data.results?.[0])
+        setFeaturedCharacter(data.results?.[4])
       } catch (err) {
         setError('Failed to load featured character.')
       } finally {
